@@ -1,0 +1,287 @@
+{% extends "base.html" %}
+{% block title %}Home{% endblock %}
+
+{% load static %}
+{% block content %}
+
+<main class="main">
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero section dark-background">
+
+        <div id="hero-carousel" data-bs-interval="5000" class="container carousel carousel-fade"
+             data-bs-ride="carousel">
+
+            <!-- Slide 1 -->
+            <div class="carousel-item active">
+                <div class="carousel-container">
+                    <h2 class="animate__animated animate__fadeInDown">Welcome to <span>ScalaG7</span></h2>
+                    <p class="animate__animated animate__fadeInUp">This is our Django web development project! The
+                        website is a collaborative effort, showcasing our skills in building dynamic and responsive web
+                        applications using Django. Stay tuned for updates as we work on creating a functional and
+                        user-friendly platform.</p>
+                    <a href="#about" class="btn-get-started animate__animated animate__fadeInUp scrollto">Read More</a>
+                </div>
+            </div>
+
+            <!--        &lt;!&ndash; Slide 2 &ndash;&gt;-->
+            <!--        <div class="carousel-item">-->
+            <!--          <div class="carousel-container">-->
+            <!--            <h2 class="animate__animated animate__fadeInDown">Lorem Ipsum Dolor</h2>-->
+            <!--            <p class="animate__animated animate__fadeInUp">Ut velit est quam dolor ad a aliquid qui aliquid. Sequi ea ut et est quaerat sequi nihil ut aliquam. Occaecati alias dolorem mollitia ut. Similique ea voluptatem. Esse doloremque accusamus repellendus deleniti vel. Minus et tempore modi architecto.</p>-->
+            <!--            <a href="#about" class="btn-get-started animate__animated animate__fadeInUp scrollto">Read More</a>-->
+            <!--          </div>-->
+            <!--        </div>-->
+
+            <!--        &lt;!&ndash; Slide 3 &ndash;&gt;-->
+            <!--        <div class="carousel-item">-->
+            <!--          <div class="carousel-container">-->
+            <!--            <h2 class="animate__animated animate__fadeInDown">Sequi ea ut et est quaerat</h2>-->
+            <!--            <p class="animate__animated animate__fadeInUp">Ut velit est quam dolor ad a aliquid qui aliquid. Sequi ea ut et est quaerat sequi nihil ut aliquam. Occaecati alias dolorem mollitia ut. Similique ea voluptatem. Esse doloremque accusamus repellendus deleniti vel. Minus et tempore modi architecto.</p>-->
+            <!--            <a href="#about" class="btn-get-started animate__animated animate__fadeInUp scrollto">Read More</a>-->
+            <!--          </div>-->
+            <!--        </div>-->
+
+            <a class="carousel-control-prev" href="#hero-carousel" role="button" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon bi bi-chevron-left" aria-hidden="true"></span>
+            </a>
+
+            <a class="carousel-control-next" href="#hero-carousel" role="button" data-bs-slide="next">
+                <span class="carousel-control-next-icon bi bi-chevron-right" aria-hidden="true"></span>
+            </a>
+
+        </div>
+
+<!--        <svg class="hero-waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"-->
+<!--             viewBox="0 24 150 28 " preserveAspectRatio="none">-->
+<!--            <defs>-->
+<!--                <path id="wave-path"-->
+<!--                      d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z"></path>-->
+<!--            </defs>-->
+<!--            <g class="wave1">-->
+<!--                <use xlink:href="#wave-path" x="50" y="3"></use>-->
+<!--            </g>-->
+<!--            <g class="wave2">-->
+<!--                <use xlink:href="#wave-path" x="50" y="0"></use>-->
+<!--            </g>-->
+<!--            <g class="wave3">-->
+<!--                <use xlink:href="#wave-path" x="50" y="9"></use>-->
+<!--            </g>-->
+<!--        </svg>-->
+
+    </section><!-- /Hero Section -->
+
+    <!-- Section Title -->
+    <div class="container pt-5 pb-0 section-title" data-aos="fade-up">
+        <h2>Skillset</h2>
+        <p>What we have learnt</p>
+    </div><!-- End Section Title -->
+    <!-- Features Section -->
+    <section id="features" class="features section">
+
+        <div class="container">
+
+            <ul class="nav nav-tabs row d-flex" data-aos="fade-up" data-aos-delay="100">
+                <li class="nav-item col-3">
+                    <a class="nav-link active show" data-bs-toggle="tab" data-bs-target="#features-tab-1">
+                        <i class="bi bi-binoculars"></i>
+                        <h4 class="d-none d-lg-block">Responsive Web Design with HTML & CSS</h4>
+                    </a>
+                </li>
+                <li class="nav-item col-3">
+                    <a class="nav-link" data-bs-toggle="tab" data-bs-target="#features-tab-2">
+                        <i class="bi bi-box-seam"></i>
+                        <h4 class="d-none d-lg-block">Building with Bootstrap</h4>
+                    </a>
+                </li>
+                <li class="nav-item col-3">
+                    <a class="nav-link" data-bs-toggle="tab" data-bs-target="#features-tab-3">
+                        <i class="bi bi-brightness-high"></i>
+                        <h4 class="d-none d-lg-block">Version Control with GitHub</h4>
+                    </a>
+                </li>
+                <li class="nav-item col-3">
+                    <a class="nav-link" data-bs-toggle="tab" data-bs-target="#features-tab-4">
+                        <i class="bi bi-command"></i>
+                        <h4 class="d-none d-lg-block">Dynamic Templating with Jinja</h4>
+                    </a>
+                </li>
+            </ul>
+
+            <div class="tab-content">
+                <div class="tab-pane fade show active" id="features-tab-1">
+                    <p>We have learned how to structure web pages using HTML and style them with CSS. This foundational
+                        knowledge helps in building responsive layouts that adapt to various screen sizes, ensuring a
+                        seamless user experience.</p>
+                </div>
+                <div class="tab-pane fade" id="features-tab-2">
+                    <p>Using Bootstrap, we have implemented a mobile-first approach with pre-built CSS components and
+                        responsive grid systems. Bootstrap enables us to build modern and visually appealing web
+                        interfaces quickly and efficiently.</p>
+                </div>
+                <div class="tab-pane fade" id="features-tab-3">
+                    <p>With GitHub, we collaborate on our project by managing code versions and collaborating as a team.
+                        GitHub’s version control features allow us to track changes, resolve conflicts, and ensure
+                        smooth project development.</p>
+                </div>
+                <div class="tab-pane fade" id="features-tab-4">
+                    <p>Jinja templating allows us to create dynamic web pages by injecting data from Django models into
+                        HTML templates. This technique helps us generate dynamic content and enhances user interactivity
+                        across the web application.</p>
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- Call To Action Section -->
+<section id="call-to-action" class="call-to-action section dark-background">
+
+    <div class="container">
+
+        <div class="row" data-aos="zoom-in" data-aos-delay="100">
+            <div class="col-xl-9 text-center text-xl-start">
+                <h3>Ready to Build Your Dream Website?</h3>
+                <p>Our team at ScalaG7 specializes in creating stunning, functional websites tailored to your needs. Whether you're a startup, a business, or an individual, we bring your vision to life with cutting-edge web development using Django. Let's turn your ideas into reality.</p>
+            </div>
+            <div class="col-xl-3 cta-btn-container text-center">
+                <a class="cta-btn align-middle" href="{% url 'application:contact' %}">Get in Touch</a>
+            </div>
+        </div>
+
+    </div>
+
+</section><!-- /Call To Action Section -->
+
+<!-- Testimonials Section -->
+<section id="testimonials" class="testimonials section">
+
+    <!-- Section Title -->
+    <div class="container section-title" data-aos="fade-up">
+        <h2>Testimonials</h2>
+        <p>What our clients are saying</p>
+    </div><!-- End Section Title -->
+
+    <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="swiper init-swiper">
+            <script type="application/json" class="swiper-config">
+                {
+                    "loop": true,
+                    "speed": 600,
+                    "autoplay": {
+                        "delay": 5000
+                    },
+                    "slidesPerView": "auto",
+                    "pagination": {
+                        "el": ".swiper-pagination",
+                        "type": "bullets",
+                        "clickable": true
+                    },
+                    "breakpoints": {
+                        "320": {
+                            "slidesPerView": 1,
+                            "spaceBetween": 40
+                        },
+                        "1200": {
+                            "slidesPerView": 3,
+                            "spaceBetween": 10
+                        }
+                    }
+                }
+            </script>
+            <div class="swiper-wrapper">
+
+                <div class="swiper-slide">
+                    <div class="testimonial-item">
+                        <img src="{% static 'img/testimonials/testimonials-1.jpg' %}" class="testimonial-img" alt="Saul Goodman">
+                        <h3>Saul Goodman</h3>
+                        <h4>CEO &amp; Founder</h4>
+                        <div class="stars">
+                            <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                        </div>
+                        <p>
+                            <i class="bi bi-quote quote-icon-left"></i>
+                            <span>"ScalaG7 took our idea and turned it into a beautifully designed, fully functional website. Their professionalism and attention to detail are unparalleled!"</span>
+                            <i class="bi bi-quote quote-icon-right"></i>
+                        </p>
+                    </div>
+                </div><!-- End testimonial item -->
+
+                <div class="swiper-slide">
+                    <div class="testimonial-item">
+                        <img src="{% static 'img/testimonials/testimonials-2.jpg' %}" class="testimonial-img" alt="Sara Wilsson">
+                        <h3>Sara Wilsson</h3>
+                        <h4>Designer</h4>
+                        <div class="stars">
+                            <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                        </div>
+                        <p>
+                            <i class="bi bi-quote quote-icon-left"></i>
+                            <span>"Working with ScalaG7 was a dream! They were able to translate our design needs into a functional, visually appealing website within the tight deadline we had."</span>
+                            <i class="bi bi-quote quote-icon-right"></i>
+                        </p>
+                    </div>
+                </div><!-- End testimonial item -->
+
+                <div class="swiper-slide">
+                    <div class="testimonial-item">
+                        <img src="{% static 'img/testimonials/testimonials-3.jpg' %}" class="testimonial-img" alt="Jena Karlis">
+                        <h3>Jena Karlis</h3>
+                        <h4>Store Owner</h4>
+                        <div class="stars">
+                            <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                        </div>
+                        <p>
+                            <i class="bi bi-quote quote-icon-left"></i>
+                            <span>"The website ScalaG7 created for my online store has dramatically improved my sales and customer engagement. I highly recommend their team for eCommerce sites!"</span>
+                            <i class="bi bi-quote quote-icon-right"></i>
+                        </p>
+                    </div>
+                </div><!-- End testimonial item -->
+
+                <div class="swiper-slide">
+                    <div class="testimonial-item">
+                        <img src="{% static 'img/testimonials/testimonials-4.jpg' %}" class="testimonial-img" alt="Matt Brandon">
+                        <h3>Matt Brandon</h3>
+                        <h4>Freelancer</h4>
+                        <div class="stars">
+                            <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                        </div>
+                        <p>
+                            <i class="bi bi-quote quote-icon-left"></i>
+                            <span>"As a freelancer, having a well-designed and user-friendly website is crucial. ScalaG7 delivered exactly what I needed, and more. It's been a game-changer for my business!"</span>
+                            <i class="bi bi-quote quote-icon-right"></i>
+                        </p>
+                    </div>
+                </div><!-- End testimonial item -->
+
+                <div class="swiper-slide">
+                    <div class="testimonial-item">
+                        <img src="{% static 'img/testimonials/testimonials-5.jpg' %}" class="testimonial-img" alt="John Larson">
+                        <h3>John Larson</h3>
+                        <h4>Entrepreneur</h4>
+                        <div class="stars">
+                            <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                        </div>
+                        <p>
+                            <i class="bi bi-quote quote-icon-left"></i>
+                            <span>"ScalaG7 exceeded my expectations. The website they created was not only beautiful but also user-friendly, helping me connect better with my clients."</span>
+                            <i class="bi bi-quote quote-icon-right"></i>
+                        </p>
+                    </div>
+                </div><!-- End testimonial item -->
+
+            </div>
+            <div class="swiper-pagination"></div>
+        </div>
+
+    </div>
+
+</section><!-- /Testimonials Section -->
+
+
+</main>
+
+{% endblock %}

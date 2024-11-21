@@ -1,0 +1,180 @@
+
+{% extends "base.html" %}
+{% block title %}Blog{% endblock %}
+
+{% load static %}
+{% block content %}
+  <main class="main">
+
+
+  <!-- Section Title -->
+  <div class="container section-title recent-posts pb-0" data-aos="fade-up">
+    <h2>Recent Posts</h2>
+    <p>Recent Blog Posts<br></p>
+  </div><!-- End Section Title -->
+
+    <!-- Blog Posts Section -->
+<section id="blog-posts" class="blog-posts section">
+
+  <div class="container">
+    <div class="row gy-4">
+
+      <!-- Post 1 -->
+      <div class="col-lg-4">
+        <article>
+          <div class="post-img">
+            <img src="{% static 'img/blog/blog-1.jpg' %}" alt="Emerging trends in politics" class="img-fluid">
+          </div>
+          <p class="post-category">Politics</p>
+          <h2 class="title">
+            <a href="blog-details.html">How Emerging Technologies Are Reshaping Political Campaigns</a>
+          </h2>
+          <div class="d-flex align-items-center">
+            <img src="{% static 'img/blog/blog-author.jpg' %}" alt="Author Maria Doe" class="img-fluid post-author-img flex-shrink-0">
+            <div class="post-meta">
+              <p class="post-author">Maria Doe</p>
+              <p class="post-date">
+                <time datetime="2022-01-01">Jan 1, 2022</time>
+              </p>
+            </div>
+          </div>
+        </article>
+      </div><!-- End Post 1 -->
+
+      <!-- Post 2 -->
+      <div class="col-lg-4">
+        <article>
+          <div class="post-img">
+            <img src="{% static 'img/blog/blog-2.jpg' %}" alt="Sports analytics revolution" class="img-fluid">
+          </div>
+          <p class="post-category">Sports</p>
+          <h2 class="title">
+            <a href="blog-details.html">How Data Analytics is Changing the Game in Sports</a>
+          </h2>
+          <div class="d-flex align-items-center">
+            <img src="{% static 'img/blog/blog-author-2.jpg' %}" alt="Author Allisa Mayer" class="img-fluid post-author-img flex-shrink-0">
+            <div class="post-meta">
+              <p class="post-author">Allisa Mayer</p>
+              <p class="post-date">
+                <time datetime="2022-06-05">Jun 5, 2022</time>
+              </p>
+            </div>
+          </div>
+        </article>
+      </div><!-- End Post 2 -->
+
+      <!-- Post 3 -->
+      <div class="col-lg-4">
+        <article>
+          <div class="post-img">
+            <img src="{% static 'img/blog/blog-3.jpg' %}" alt="Entertainment trends" class="img-fluid">
+          </div>
+          <p class="post-category">Entertainment</p>
+          <h2 class="title">
+            <a href="blog-details.html">Top Entertainment Trends to Watch in 2024</a>
+          </h2>
+          <div class="d-flex align-items-center">
+            <img src="{% static 'img/blog/blog-author-3.jpg' %}" alt="Author Mark Dower" class="img-fluid post-author-img flex-shrink-0">
+            <div class="post-meta">
+              <p class="post-author">Mark Dower</p>
+              <p class="post-date">
+                <time datetime="2022-06-22">Jun 22, 2022</time>
+              </p>
+            </div>
+          </div>
+        </article>
+      </div><!-- End Post 3 -->
+
+      <!-- Post 4 -->
+      <div class="col-lg-4">
+        <article>
+          <div class="post-img">
+            <img src="{% static 'img/blog/blog-4.jpg' %}" alt="Technology in sports" class="img-fluid">
+          </div>
+          <p class="post-category">Sports</p>
+          <h2 class="title">
+            <a href="blog-details.html">The Rise of Wearable Tech in Sports Training</a>
+          </h2>
+          <div class="d-flex align-items-center">
+            <img src="{% static 'img/blog/blog-author-4.jpg' %}" alt="Author Lisa Neymar" class="img-fluid post-author-img flex-shrink-0">
+            <div class="post-meta">
+              <p class="post-author">Lisa Neymar</p>
+              <p class="post-date">
+                <time datetime="2022-06-30">Jun 30, 2022</time>
+              </p>
+            </div>
+          </div>
+        </article>
+      </div><!-- End Post 4 -->
+
+      <!-- Post 5 -->
+      <div class="col-lg-4">
+        <article>
+          <div class="post-img">
+            <img src="{% static 'img/blog/blog-5.jpg' %}" alt="Politics and social media" class="img-fluid">
+          </div>
+          <p class="post-category">Politics</p>
+          <h2 class="title">
+            <a href="blog-details.html">The Role of Social Media in Modern Political Movements</a>
+          </h2>
+          <div class="d-flex align-items-center">
+            <img src="{% static 'img/blog/blog-author-5.jpg' %}" alt="Author Denis Peterson" class="img-fluid post-author-img flex-shrink-0">
+            <div class="post-meta">
+              <p class="post-author">Denis Peterson</p>
+              <p class="post-date">
+                <time datetime="2022-01-30">Jan 30, 2022</time>
+              </p>
+            </div>
+          </div>
+        </article>
+      </div><!-- End Post 5 -->
+
+      <!-- Post 6 -->
+      <div class="col-lg-4">
+        <article>
+          <div class="post-img">
+            <img src="{% static 'img/blog/blog-6.jpg' %}" alt="Streaming platforms" class="img-fluid">
+          </div>
+          <p class="post-category">Entertainment</p>
+          <h2 class="title">
+            <a href="blog-details.html">The Future of Streaming Platforms in 2024</a>
+          </h2>
+          <div class="d-flex align-items-center">
+            <img src="{% static 'img/blog/blog-author-6.jpg' %}" alt="Author Mika Lendon" class="img-fluid post-author-img flex-shrink-0">
+            <div class="post-meta">
+              <p class="post-author">Mika Lendon</p>
+              <p class="post-date">
+                <time datetime="2022-02-14">Feb 14, 2022</time>
+              </p>
+            </div>
+          </div>
+        </article>
+      </div><!-- End Post 6 -->
+
+    </div>
+  </div>
+
+</section><!-- /Blog Posts Section -->
+
+    <!-- Blog Pagination Section -->
+    <section id="blog-pagination" class="blog-pagination section">
+
+      <div class="container">
+        <div class="d-flex justify-content-center">
+          <ul>
+            <li><a href="#"><i class="bi bi-chevron-left"></i></a></li>
+            <li><a href="#">1</a></li>
+            <li><a href="#" class="active">2</a></li>
+            <li><a href="#">3</a></li>
+            <li><a href="#">4</a></li>
+            <li>...</li>
+            <li><a href="#">10</a></li>
+            <li><a href="#"><i class="bi bi-chevron-right"></i></a></li>
+          </ul>
+        </div>
+      </div>
+
+    </section><!-- /Blog Pagination Section -->
+
+  </main>
+{% endblock %}

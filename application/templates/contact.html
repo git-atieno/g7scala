@@ -1,0 +1,219 @@
+{% extends "base.html" %}
+{% block title %}Contact{% endblock %}
+
+{% load static %}
+
+{% block content %}
+
+<!-- Contact Section -->
+<section id="contact" class="contact  pb-0">
+
+    <!-- Section Title -->
+    <div class="container section-title" data-aos="fade-up">
+        <h2>Contact</h2>
+        <p>Contact Us</p>
+    </div><!-- End Section Title -->
+
+    <div class="container" data-aos="fade" data-aos-delay="100">
+
+        <div class="row gy-4">
+
+            <div class="col-lg-4">
+                <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="200">
+                    <i class="bi bi-geo-alt flex-shrink-0"></i>
+                    <div>
+                        <h3>Address</h3>
+                        <p>123 Mombasa Road, Nairobi, Kenya</p>
+                    </div>
+                </div><!-- End Info Item -->
+
+                <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="300">
+                    <i class="bi bi-telephone flex-shrink-0"></i>
+                    <div>
+                        <h3>Call Us</h3>
+                        <p>+254112481489</p>
+                    </div>
+                </div><!-- End Info Item -->
+
+                <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="400">
+                    <i class="bi bi-envelope flex-shrink-0"></i>
+                    <div>
+                        <h3>Email Us</h3>
+                        <p>info@scalag7.com</p>
+                    </div>
+                </div><!-- End Info Item -->
+
+            </div>
+
+            <div class="col-lg-8">
+                <form action="forms/contact.php" method="post" class="php-email-form" data-aos="fade-up"
+                      data-aos-delay="200">
+                    <div class="row gy-4">
+
+                        <div class="col-md-6">
+                            <input type="text" name="name" class="form-control" placeholder="Your Name" required="">
+                        </div>
+
+                        <div class="col-md-6 ">
+                            <input type="email" class="form-control" name="email" placeholder="Your Email" required="">
+                        </div>
+
+                        <div class="col-md-12">
+                            <input type="text" class="form-control" name="subject" placeholder="Subject" required="">
+                        </div>
+
+                        <div class="col-md-12">
+                            <textarea class="form-control" name="message" rows="6" placeholder="Message"
+                                      required=""></textarea>
+                        </div>
+
+                        <div class="col-md-12 text-center">
+                            <div class="loading">Loading</div>
+                            <div class="error-message"></div>
+                            <div class="sent-message">Your message has been sent. Thank you!</div>
+
+                            <button type="submit">Send Message</button>
+                        </div>
+
+                    </div>
+                </form>
+            </div><!-- End Contact Form -->
+
+        </div>
+
+    </div>
+
+</section><!-- /Contact Section -->
+
+<!-- Faq Section -->
+<section id="faq" class="faq section">
+    <!-- Section Title -->
+    <div class="container section-title" data-aos="fade-up">
+        <h2>Frequently Asked Questions</h2>
+        <p>Get answers to the most common questions about our web development services</p>
+    </div><!-- End Section Title -->
+
+    <div class="container" data-aos="fade-up">
+        <div class="row">
+            <div class="col-12">
+                <div class="custom-accordion" id="accordion-faq">
+
+                    <!-- FAQ 1 -->
+                    <div class="accordion-item">
+                        <h2 class="mb-0">
+                            <button class="btn btn-link" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapse-faq-1">
+                                What is the process for building a website?
+                            </button>
+                        </h2>
+
+                        <div id="collapse-faq-1" class="collapse show" aria-labelledby="headingOne"
+                             data-parent="#accordion-faq">
+                            <div class="accordion-body">
+                                Our process includes several phases: planning, design, development, testing, and
+                                deployment. First, we understand your needs, then we create a design prototype. Once
+                                approved, we begin development and ensure everything is tested before launch.
+                            </div>
+                        </div>
+                    </div><!-- End FAQ 1 -->
+
+                    <!-- FAQ 2 -->
+                    <div class="accordion-item">
+                        <h2 class="mb-0">
+                            <button class="btn btn-link collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapse-faq-2">
+                                How long does it take to build a website?
+                            </button>
+                        </h2>
+                        <div id="collapse-faq-2" class="collapse" aria-labelledby="headingTwo"
+                             data-parent="#accordion-faq">
+                            <div class="accordion-body">
+                                The timeline depends on the complexity of the project. A simple website may take a few
+                                weeks, while a more complex website (with features like e-commerce or custom
+                                development) can take several months. We’ll provide an estimated timeline after
+                                discussing your project details.
+                            </div>
+                        </div>
+                    </div><!-- End FAQ 2 -->
+
+                    <!-- FAQ 3 -->
+                    <div class="accordion-item">
+                        <h2 class="mb-0">
+                            <button class="btn btn-link collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapse-faq-3">
+                                Do I need to provide content for the website?
+                            </button>
+                        </h2>
+
+                        <div id="collapse-faq-3" class="collapse" aria-labelledby="headingThree"
+                             data-parent="#accordion-faq">
+                            <div class="accordion-body">
+                                Yes, we will need content such as text, images, and videos for the website. However, we
+                                can help guide you in organizing and structuring the content. If you need assistance
+                                with content creation, we also offer copywriting and photography services.
+                            </div>
+                        </div>
+                    </div><!-- End FAQ 3 -->
+
+                    <!-- FAQ 4 -->
+                    <div class="accordion-item">
+                        <h2 class="mb-0">
+                            <button class="btn btn-link collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapse-faq-4">
+                                Can I update my website after it’s launched?
+                            </button>
+                        </h2>
+                        <div id="collapse-faq-4" class="collapse" aria-labelledby="headingFour"
+                             data-parent="#accordion-faq">
+                            <div class="accordion-body">
+                                Absolutely! Once your website is live, you’ll have the ability to make updates through a
+                                content management system (CMS), or we can assist you with any updates you require
+                                through ongoing maintenance services.
+                            </div>
+                        </div>
+                    </div><!-- End FAQ 4 -->
+
+                    <!-- FAQ 5 -->
+                    <div class="accordion-item">
+                        <h2 class="mb-0">
+                            <button class="btn btn-link collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapse-faq-5">
+                                What kind of support do you provide after my website is launched?
+                            </button>
+                        </h2>
+                        <div id="collapse-faq-5" class="collapse" aria-labelledby="headingFive"
+                             data-parent="#accordion-faq">
+                            <div class="accordion-body">
+                                We offer ongoing support through website maintenance packages, which can include regular
+                                updates, troubleshooting, and improvements. You can also contact us anytime if you need
+                                help with any technical issues.
+                            </div>
+                        </div>
+                    </div><!-- End FAQ 5 -->
+
+                    <!-- FAQ 6 -->
+                    <div class="accordion-item">
+                        <h2 class="mb-0">
+                            <button class="btn btn-link collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapse-faq-6">
+                                Do you offer e-commerce website development?
+                            </button>
+                        </h2>
+                        <div id="collapse-faq-6" class="collapse" aria-labelledby="headingSix"
+                             data-parent="#accordion-faq">
+                            <div class="accordion-body">
+                                Yes, we specialize in building e-commerce websites. We can integrate various payment
+                                gateways, product management systems, and inventory solutions to create a smooth online
+                                shopping experience for your customers.
+                            </div>
+                        </div>
+                    </div><!-- End FAQ 6 -->
+
+                </div>
+            </div>
+        </div>
+    </div>
+</section><!-- /Faq Section -->
+
+
+{% endblock %}

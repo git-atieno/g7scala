@@ -1,0 +1,164 @@
+{% extends "base.html" %}
+{% block title %}About{% endblock %}
+
+{% load static %}
+
+{% block content %}
+
+<!-- Team Section -->
+<section id="team" class="team section" style="padding-top: 120px;">
+
+    <!-- Section Title -->
+    <div class="container section-title" data-aos="fade-up">
+        <h2>Team</h2>
+        <p>Our Hardworking Team</p>
+    </div><!-- End Section Title -->
+
+    <div class="container">
+
+        <div class="row gy-4">
+
+            <div class="col-lg-3 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="100">
+                <div class="team-member">
+                    <div class="member-img">
+                        <img src="{% static 'img/per2.png' %}" class="img-fluid" alt="Sheila">
+                        <div class="social">
+                            <a href=""><i class="bi bi-twitter-x"></i></a>
+                            <a href=""><i class="bi bi-facebook"></i></a>
+                            <a href=""><i class="bi bi-instagram"></i></a>
+                            <a href=""><i class="bi bi-linkedin"></i></a>
+                        </div>
+                    </div>
+                    <div class="member-info">
+                        <h4>Sheila</h4>
+                        <span>Chief Executive Officer</span>
+                    </div>
+                </div>
+            </div><!-- End Team Member -->
+
+            <div class="col-lg-3 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="200">
+                <div class="team-member">
+                    <div class="member-img">
+                        <img src="{% static 'img/per3.png' %}" class="img-fluid" alt="Sarah Jhonson">
+                        <div class="social">
+                            <a href=""><i class="bi bi-twitter-x"></i></a>
+                            <a href=""><i class="bi bi-facebook"></i></a>
+                            <a href=""><i class="bi bi-instagram"></i></a>
+                            <a href=""><i class="bi bi-linkedin"></i></a>
+                        </div>
+                    </div>
+                    <div class="member-info">
+                        <h4>Alex</h4>
+                        <span>Product Manager</span>
+                    </div>
+                </div>
+            </div><!-- End Team Member -->
+
+            <div class="col-lg-3 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="300">
+                <div class="team-member">
+                    <div class="member-img">
+                        <img src="{% static 'img/per4.png' %}" class="img-fluid" alt="William Anderson">
+                        <div class="social">
+                            <a href=""><i class="bi bi-twitter-x"></i></a>
+                            <a href=""><i class="bi bi-facebook"></i></a>
+                            <a href=""><i class="bi bi-instagram"></i></a>
+                            <a href=""><i class="bi bi-linkedin"></i></a>
+                        </div>
+                    </div>
+                    <div class="member-info">
+                        <h4>Bellamy</h4>
+                        <span>CTO</span>
+                    </div>
+                </div>
+            </div><!-- End Team Member -->
+
+            <div class="col-lg-3 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="400">
+                <div class="team-member">
+                    <div class="member-img">
+                        <img src="{% static 'img/per1.png' %}" class="img-fluid" alt="Amanda Jepson">
+                        <div class="social">
+                            <a href=""><i class="bi bi-twitter-x"></i></a>
+                            <a href=""><i class="bi bi-facebook"></i></a>
+                            <a href=""><i class="bi bi-instagram"></i></a>
+                            <a href=""><i class="bi bi-linkedin"></i></a>
+                        </div>
+                    </div>
+                    <div class="member-info">
+                        <h4>Mary</h4>
+                        <span>Accountant</span>
+                    </div>
+                </div>
+            </div><!-- End Team Member -->
+
+        </div>
+
+    </div>
+
+</section><!-- /Team Section -->
+
+<!-- Call To Action Section -->
+<section id="call-to-action" class="call-to-action section dark-background">
+
+    <div class="container">
+
+        <div class="row" data-aos="zoom-in" data-aos-delay="100">
+            <div class="col-xl-9 text-center text-xl-start">
+                <h3>Transform Your Ideas into Reality with Us</h3>
+                <p>At ScalaG7, we specialize in turning your business vision into a tangible success story. Whether
+                    you're launching a new product, revamping your brand, or expanding your digital presence, we provide
+                    the tools, expertise, and strategies to help you thrive. Let's build something great together.</p>
+            </div>
+            <div class="col-xl-3 cta-btn-container text-center">
+                <a class="cta-btn align-middle" href="{% url 'application:contact' %}">Start Your Journey</a>
+            </div>
+        </div>
+
+    </div>
+
+</section><!-- /Call To Action Section -->
+<!-- About Section -->
+<section id="about" class="about section">
+
+    <!-- Section Title -->
+    <div class="container section-title" data-aos="fade-up">
+        <h2>About</h2>
+        <p>Who we are</p>
+    </div><!-- End Section Title -->
+
+    <div class="container">
+
+        <div class="row gy-4">
+
+            <div class="col-lg-6 content" data-aos="fade-up" data-aos-delay="100">
+                <p>
+                    We are a group of six students from eMobillis, currently training in Django web development. Our
+                    project is a collaborative effort to build a dynamic web application using Django for the back-end
+                    and Bootstrap for the front-end.
+                </p>
+                <ul>
+                    <li><i class="bi bi-check2-circle"></i> <span>Building a responsive and modern web interface with Bootstrap.</span>
+                    </li>
+                    <li><i class="bi bi-check2-circle"></i> <span>Leveraging Django's powerful back-end capabilities for a seamless experience.</span>
+                    </li>
+                    <li><i class="bi bi-check2-circle"></i> <span>Enhancing team collaboration and coding best practices.</span>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="col-lg-6" data-aos="fade-up" data-aos-delay="200">
+                <p>Our project integrates the flexibility of Django for dynamic content and the responsive design
+                    features of Bootstrap to ensure a user-friendly, mobile-first application. Through this assignment,
+                    we aim to strengthen our skills in both front-end and back-end development.</p>
+                <a href="#" class="read-more"><span>Read More</span><i class="bi bi-arrow-right"></i></a>
+            </div>
+
+        </div>
+
+    </div>
+
+</section><!-- /About Section -->
+
+
+
+
+{% endblock %}
